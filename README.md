@@ -23,7 +23,7 @@ flowchart LR
     D --> F
     F --> G[Reranking<br/>cross-encoder — optionnel]
     G --> H[LLM compatible OpenAI<br/>ou repli extractif]
-    H --> I[Réponse citée<br/>[S1] [S2]… vérifiées]
+    H --> I["Réponse citée<br/>[S1] [S2]… vérifiées"]
 ```
 
 - **Hybrid retrieval** — dense (sémantique) + BM25 (termes exacts), fusionnés par **RRF** : c'est l'amélioration au meilleur rapport coût/gain, sans dépendance lourde.
