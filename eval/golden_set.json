@@ -1,0 +1,29 @@
+{
+  "cases_note": "Golden set minimal pour la démo — keywords = termes présents dans le chunk pertinent attendu.",
+  "cases": [
+    {
+      "question": "Qu'est-ce que le RAG et pourquoi réduit-il les hallucinations ?",
+      "keywords": ["RAG", "hallucinations", "documents"]
+    },
+    {
+      "question": "Quelle est la formule du RRF et quelle valeur de k est consensuelle ?",
+      "keywords": ["RRF", "60"]
+    },
+    {
+      "question": "Pourquoi BM25 seul ne suffit-il pas ?",
+      "keywords": ["BM25", "termes exacts", "sens"]
+    },
+    {
+      "question": "Quelles métriques minimales pour évaluer un pipeline RAG ?",
+      "keywords": ["recall", "MRR", "faithfulness"]
+    },
+    {
+      "question": "Pourquoi le chunking à taille fixe est-il déconseillé ?",
+      "keywords": ["taille fixe", "phrases", "recouvrement"]
+    },
+    {
+      "question": "À quelle condition activer le reranking ?",
+      "keywords": ["reranking", "évaluation", "golden set"]
+    }
+  ]
+}

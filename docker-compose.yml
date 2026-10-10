@@ -1,0 +1,14 @@
+services:
+  ragforge:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # tout endpoint compatible OpenAI ; repli extractif si injoignable
+      RAGFORGE_LLM_BASE_URL: http://host.docker.internal:11434/v1
+      RAGFORGE_LLM_MODEL: qwen2.5:7b
+    volumes:
+      - ragforge-data:/app/data
+
+volumes:
+  ragforge-data:

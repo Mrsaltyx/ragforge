@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+build/
+dist/
+
+# Secrets — jamais commiter de vraie clé
+.env
+
+# Données locales (index, uploads)
+data/
+
+# Outils
+.pytest_cache/
+.ruff_cache/
+.coverage
+.mypy_cache/
+.idea/
+.vscode/
